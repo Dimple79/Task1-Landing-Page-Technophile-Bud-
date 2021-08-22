@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><i class="fas fa-code-branch" style="color: #990033;"></i>WebPlay</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" style="background: #990033; padding: 5px 15px; border-radius: 20px; color: #fff; font-weight: 500;">Get Started</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Learn Building<br><br><br>Amazing <span>Websites</span></h2>
+                <br><br><br>
+                <p>Want to build Responsive Website full with Creativity? But Don't know from where to start. Don't Worry... We are here to guide you at all steps and make you an expert with our new course. Start from zero and get mentor support whenever needed.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/work.jpg" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/white.jpg" onclick="imgSlider('img/white.jpg');changeCircleColor('#017143')"></li>
+            <li><img src="img/work.jpg" onclick="imgSlider('img/work.jpg');changeCircleColor('#990033')"></li>
+            <li><img src="img/woman1.jpg" onclick="imgSlider('img/woman1.jpg');changeCircleColor('#669999')"></li>       
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" style="height: 5rem;"></a></li>
+            <li><a href="#"><img src="img/instagram.png" style="height: 5rem;"></a></li>
+            <li><a href="#"><img src="img/twitter.png" style="height: 5rem;"></a></li>
+            <li><a href="#"><img src="img/linkedin.png" style="height: 5rem;"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+</body>
+</html>
